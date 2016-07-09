@@ -18,8 +18,10 @@ alter user admin with encrypted password 'admin';
 
 //create database
 create database userservice owner 'admin';
+//this works on centos6
+create database userservice owner admin;
 //display all databases
-\t
+\l
 
 //connect to userservice as user admin
 \c userservice admin
